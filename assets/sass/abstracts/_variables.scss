@@ -1,17 +1,19 @@
 // BASE COLORS
 $color-transparent: transparent;
 $color-white: #FFF;
-$color-black: #2d2d2d;
-$color-black-dark: #323436;
-$color-grey-light: #eee;
+$color-black: #333333;
+$color-black-dark: #000;
+$color-grey-light: #F1F1F1;
 $color-grey: #888888;
-$color-grey-dark: #555b5b;
-$color-green-light: #95CD32;
-$color-green: #32CD32;
-$color-blue-light: #337ab7;
+$color-grey-dark: #5B5B5B;
+$color-blue: #007EAf;
+$color-blue-light: #e5f8fd;
+$color-yellow: #FEED35;
 // FONTS
 $font-anr: 'avenirNextRegular';
 $font-anb: 'avenirNextBold';
 $font-anbcn: 'avenirNextBoldCn';
 $font-ancn: 'avenirNextCn';
 $font-anmcn: 'avenirNextMediumCn';
+// BOX SHADOW
+$box-shadow: 0 0 0.5rem 0 #AFAFAF;
