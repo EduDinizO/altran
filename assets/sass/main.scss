@@ -1,0 +1,20 @@
+// GRID ONLY
+@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+// ALL BOOTSTRAP
+//@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// ABSTRACTS
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+// BASE
+@import 'base/base';
+@import 'base/grid';
+@import 'base/typography';
+// COMPONENTS
+@import 'components/buttons';
+// LAYOUT
+@import 'layouts/footer';
+@import 'layouts/form';
+@import 'layouts/header';
+// PAGES
+@import 'pages/home';

@@ -1,0 +1,46 @@
+// BASIC RESET
+p, h1, h2, h3, h4, h5, h6, ul, li,
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-weight: unset;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, li,
+*,
+*:active,
+*:focus {
+    outline: none;
+    box-shadow: unset;
+    box-sizing: border-box;
+}
+
+html {
+    @include respond(full-hd) {
+        // width > 1401px
+        font-size: 112.5%; // 1rem = 18px
+    }
+    @include respond(big-desk) {
+        // 1301px - 1400px
+        font-size: 106.25%; // 1rem = 17px
+    }
+    @include respond(med-desk) {
+        // 1201px - 1300px
+        font-size: 100%; // 1rem = 16px
+    }
+    @include respond(desk) {
+        // 769px - 1200px
+        font-size: 93.75%; // 1rem = 15px
+    }
+    @include respond(mobile-hd) {
+        // 576px - 768px
+        font-size: 87.5%; // 1rem = 14px
+    }
+    @include respond(mobile) {
+        // width <= 575px
+        font-size: 81.3%; // 1rem = 16 x 0.813 = 13px
+    }
+}
