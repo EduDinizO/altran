@@ -19,27 +19,31 @@ p, h1, h2, h3, h4, h5, h6, ul, li,
 }
 
 html {
-    @include respond(full-hd) {
-        // width > 1401px
+    @include respond(fhd) {
+        // width > 1601px
+        font-size: 118.75%; // 1rem = 19px
+    }
+    @include respond(xxl) {
+        // 1441px - 1600px
         font-size: 112.5%; // 1rem = 18px
     }
-    @include respond(big-desk) {
-        // 1301px - 1400px
+    @include respond(xl) {
+        // 1367px - 1440px
         font-size: 106.25%; // 1rem = 17px
     }
-    @include respond(med-desk) {
-        // 1201px - 1300px
+    @include respond(lg) {
+        // 1281px - 1366px
         font-size: 100%; // 1rem = 16px
     }
-    @include respond(desk) {
-        // 769px - 1200px
+    @include respond(md) {
+        // 769px - 1280px
         font-size: 93.75%; // 1rem = 15px
     }
-    @include respond(mobile-hd) {
+    @include respond(sm) {
         // 576px - 768px
         font-size: 87.5%; // 1rem = 14px
     }
-    @include respond(mobile) {
+    @include respond(xs) {
         // width <= 575px
         font-size: 81.3%; // 1rem = 16 x 0.813 = 13px
     }
