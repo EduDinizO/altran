@@ -1,7 +1,5 @@
 .header {
     &__list {
-        list-style: none;
-
         &-item {
             cursor: pointer;
             @include transition;
@@ -24,12 +22,13 @@
 
     &__content {
         display: none;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        top: 2rem;
+        left: -1rem;
+        right: -1rem;
         opacity: 0;
 
         &--blue {
+            padding: 4.3rem 6%;
             background-color: $color-blue;
         }
 

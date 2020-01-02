@@ -2651,6 +2651,9 @@ body {
   line-height: 1;
   color: #333333; }
 
+.font--mcn {
+  font-family: "avenirNextMediumCn"; }
+
 .text--xs {
   font-size: 0.5rem; }
 
@@ -2659,6 +2662,12 @@ body {
 
 .text--md {
   font-size: 0.8rem; }
+
+.text--lg {
+  font-size: 1.2rem; }
+
+.text--xl {
+  font-size: 1.5rem; }
 
 .text--bold {
   font-family: "avenirNextBold"; }
@@ -2681,28 +2690,34 @@ body {
 .position--absolute {
   position: absolute; }
 
-.bg--blue {
-  background: #007EAf; }
-
-.header__list {
+.list--unstyled {
   list-style: none; }
-  .header__list-item {
-    cursor: pointer;
+
+.line-height--lg {
+  line-height: 1.8; }
+
+.w-100 {
+  width: 100%; }
+
+.header__list-item {
+  cursor: pointer;
+  transition: all .2s; }
+  .header__list-item:hover {
+    color: #00597c;
     transition: all .2s; }
-    .header__list-item:hover {
-      color: #00597c;
-      transition: all .2s; }
-  .header__list-title:hover + .header__content {
-    display: block;
-    opacity: 1; }
+
+.header__list-title:hover + .header__content {
+  display: block;
+  opacity: 1; }
 
 .header__content {
   display: none;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 2rem;
+  left: -1rem;
+  right: -1rem;
   opacity: 0; }
   .header__content--blue {
+    padding: 4.3rem 6%;
     background-color: #007EAf; }
   .header__content--transparent {
     height: 0.7rem;
@@ -2724,3 +2739,13 @@ body {
     .header__menu-icon:hover {
       background-color: #00597c;
       transition: all .2s; }
+
+.list__item {
+  margin-bottom: 1.7rem; }
+
+.list__anchor {
+  text-decoration: none; }
+  .list__anchor:hover {
+    background-color: #FFF;
+    color: #007EAf;
+    transition: all .2s; }

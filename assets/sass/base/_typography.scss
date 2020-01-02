@@ -31,6 +31,12 @@ body {
     color: $color-black;
 }
 
+.font {
+    &--mcn {
+        font-family: $font-anmcn;
+    }
+}
+
 .text {
     &--xs {
         font-size: 0.5rem;
@@ -40,6 +46,12 @@ body {
     }
     &--md {
         font-size: 0.8rem;
+    }
+    &--lg {
+        font-size: 1.2rem;
+    }
+    &--xl {
+        font-size: 1.5rem;
     }
     &--bold {
         font-family: $font-anb;

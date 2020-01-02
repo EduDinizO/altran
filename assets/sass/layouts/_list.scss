@@ -1,0 +1,15 @@
+.list {
+    &__item {
+        margin-bottom: 1.7rem;
+    }
+
+    &__anchor {
+        text-decoration: none;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-blue;
+            @include transition;
+        }
+    }
+}
