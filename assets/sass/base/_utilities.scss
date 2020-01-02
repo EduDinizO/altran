@@ -1,0 +1,14 @@
+.position {
+    &--relative {
+        position: relative;
+    }
+    &--absolute {
+        position: absolute;
+    }
+}
+
+.bg {
+    &--blue {
+        background: $color-blue;
+    }
+}

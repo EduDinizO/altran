@@ -1,3 +1,65 @@
 .header {
+    &__list {
+        list-style: none;
 
+        &-item {
+            cursor: pointer;
+            @include transition;
+
+            &:hover {
+                color: $color-blue-darken;
+                @include transition;
+            }
+        }
+
+        &-title {
+            &:hover {
+                + .header__content {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__content {
+        display: none;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+
+        &--blue {
+            background-color: $color-blue;
+        }
+
+        &--transparent {
+            height: 0.7rem;
+            background-color: $color-transparent;
+        }
+
+        &:hover {
+            display: block;
+            opacity: 1;
+        }
+    }
+
+    &__menu {
+        width: 3.5rem;
+
+        &-icon {
+            width: 2rem;
+            height: 2.3rem;
+            padding: 0.9rem 0.6rem 0.6rem;
+            background-color: $color-blue;
+            fill: $color-white;
+            cursor: pointer;
+            @include transition;
+
+            &:hover {
+                background-color: $color-blue-darken;
+                @include transition;
+            }
+        }
+    }
 }

@@ -30,3 +30,30 @@ body {
     line-height: 1;
     color: $color-black;
 }
+
+.text {
+    &--xs {
+        font-size: 0.5rem;
+    }
+    &--sm {
+        font-size: 0.65rem;
+    }
+    &--md {
+        font-size: 0.8rem;
+    }
+    &--bold {
+        font-family: $font-anb;
+    }
+    &--semi-bold {
+        font-weight: 700;
+    }
+    &--uppercase {
+        text-transform: uppercase;
+    }
+    &--white {
+        color: $color-white;
+    }
+    &--blue {
+        color: $color-blue;
+    }
+}

@@ -2650,3 +2650,77 @@ body {
   font-weight: 300;
   line-height: 1;
   color: #333333; }
+
+.text--xs {
+  font-size: 0.5rem; }
+
+.text--sm {
+  font-size: 0.65rem; }
+
+.text--md {
+  font-size: 0.8rem; }
+
+.text--bold {
+  font-family: "avenirNextBold"; }
+
+.text--semi-bold {
+  font-weight: 700; }
+
+.text--uppercase {
+  text-transform: uppercase; }
+
+.text--white {
+  color: #FFF; }
+
+.text--blue {
+  color: #007EAf; }
+
+.position--relative {
+  position: relative; }
+
+.position--absolute {
+  position: absolute; }
+
+.bg--blue {
+  background: #007EAf; }
+
+.header__list {
+  list-style: none; }
+  .header__list-item {
+    cursor: pointer;
+    transition: all .2s; }
+    .header__list-item:hover {
+      color: #00597c;
+      transition: all .2s; }
+  .header__list-title:hover + .header__content {
+    display: block;
+    opacity: 1; }
+
+.header__content {
+  display: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0; }
+  .header__content--blue {
+    background-color: #007EAf; }
+  .header__content--transparent {
+    height: 0.7rem;
+    background-color: transparent; }
+  .header__content:hover {
+    display: block;
+    opacity: 1; }
+
+.header__menu {
+  width: 3.5rem; }
+  .header__menu-icon {
+    width: 2rem;
+    height: 2.3rem;
+    padding: 0.9rem 0.6rem 0.6rem;
+    background-color: #007EAf;
+    fill: #FFF;
+    cursor: pointer;
+    transition: all .2s; }
+    .header__menu-icon:hover {
+      background-color: #00597c;
+      transition: all .2s; }
