@@ -13,19 +13,21 @@
         &-title {
             &:hover {
                 + .header__content {
-                    display: block;
+                    visibility: visible;
                     opacity: 1;
+                    @include transition;
                 }
             }
         }
     }
 
     &__content {
-        display: none;
+        visibility: hidden;
         top: 2rem;
         left: -1rem;
         right: -1rem;
         opacity: 0;
+        @include transition;
 
         &--blue {
             padding: 4.3rem 6%;
@@ -38,8 +40,9 @@
         }
 
         &:hover {
-            display: block;
+            visibility: visible;
             opacity: 1;
+            @include transition;
         }
     }
 

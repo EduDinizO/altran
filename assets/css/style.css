@@ -2707,15 +2707,17 @@ body {
     transition: all .2s; }
 
 .header__list-title:hover + .header__content {
-  display: block;
-  opacity: 1; }
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s; }
 
 .header__content {
-  display: none;
+  visibility: hidden;
   top: 2rem;
   left: -1rem;
   right: -1rem;
-  opacity: 0; }
+  opacity: 0;
+  transition: all .2s; }
   .header__content--blue {
     padding: 4.3rem 6%;
     background-color: #007EAf; }
@@ -2723,8 +2725,9 @@ body {
     height: 0.7rem;
     background-color: transparent; }
   .header__content:hover {
-    display: block;
-    opacity: 1; }
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s; }
 
 .header__menu {
   width: 3.5rem; }
