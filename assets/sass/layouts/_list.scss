@@ -14,6 +14,13 @@
     }
 
     &__menu {
+        @include transition;
+
+        a:hover {
+            color: $color-blue;
+            @include transition;
+        }
+
         &:not(:last-of-type) {
             &::after {
                 content: '';
@@ -23,7 +30,7 @@
                 background-color: $color-black;
                 border-radius: 0.4rem;
                 margin-left: 1rem;
-                margin-bottom: 0.2rem;
+                margin-bottom: 0.3rem;
             }
         }
     }
