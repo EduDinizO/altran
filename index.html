@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--UNCOMMENT THIS WHEN PUBLISH-->
     <!--<link rel="stylesheet" href="assets/css/style.comp.css">-->
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
     <title>Altran</title>
 </head>
-<body>
+<body class="js--bg--overlay">
 
 <!--=============== DESKTOP HEADER ===============-->
-<header class="header container position--relative">
+<header class="header container d-none d-lg-block position--relative">
     <div class="row">
         <div class="col-12 d-flex justify-content-between align-items-center">
             <div>
@@ -455,6 +458,112 @@
         </div>
     </div>
 </header>
-
+<!--=============== MOBILE HEADER ===============-->
+<header class="header container-fluid d-lg-none position--relative pt-4 pb-4">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="header--mobile__menu-icon header--mobile__menu-icon--closed mr-5 position--relative js--header--mobile__menu-icon"></div>
+                <img class="header--mobile__logo" src="./assets/img/logo.svg" alt="logo">
+            </div>
+            <div class="d-flex">
+                <svg class="header--mobile__icon mr-3">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-search"></use>
+                </svg>
+                <svg class="header--mobile__icon mr-3">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-phone"></use>
+                </svg>
+                <svg class="header--mobile__icon">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-world"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!--=============== MOBILE MENU ===============-->
+    <div class="header--mobile__menu d-lg-none position--absolute js--header--mobile__menu">
+        <ul class="header--mobile__list list--unstyled p-5">
+            <li class="u--mb-45">
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    Consulting
+                </a>
+            </li>
+            <li class="u--mb-45">
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    Digital
+                </a>
+            </li>
+            <li class="u--mb-45">
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    Engineering
+                </a>
+            </li>
+            <li class="u--mb-45">
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    World Class Centers
+                </a>
+            </li>
+            <li class="u--mb-45">
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    Industrialized Globalhore
+                </a>
+            </li>
+            <li>
+                <a class="header--mobile__list-item no--decoration text--uppercase" href="#">
+                    Cambridge Consultants
+                </a>
+            </li>
+        </ul>
+        <ul class="header--mobile__list header--mobile__list--blue list--unstyled p-5">
+            <li class="d-flex justify-content-between align-items-center u--mb-45">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    About us
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+            <li class="d-flex justify-content-between align-items-center u--mb-45">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    Industries
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+            <li class="d-flex justify-content-between align-items-center u--mb-45">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    Newsroom
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+            <li class="d-flex justify-content-between align-items-center u--mb-45">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    Insights
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+            <li class="d-flex justify-content-between align-items-center u--mb-45">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    Finance
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+                <a href="#" class="no--decoration text--bold text--white text--uppercase">
+                    Careers
+                </a>
+                <svg class="header--mobile__chevron">
+                    <use xlink:href="./assets/img/icons/sprites.svg#icon-arrow_forward_ios"></use>
+                </svg>
+            </li>
+        </ul>
+    </div>
+</header>
 </body>
 </html>

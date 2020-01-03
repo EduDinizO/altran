@@ -2,6 +2,7 @@
     &--relative {
         position: relative;
     }
+
     &--absolute {
         position: absolute;
     }
@@ -13,6 +14,11 @@
     }
 }
 
+.no--decoration {
+    text-decoration: none;
+}
+
+
 .line-height {
     &--lg {
         line-height: 1.8;
@@ -21,4 +27,8 @@
 
 .w-100 {
     width: 100%;
+}
+
+.u--mb-45 {
+    margin-bottom: 2rem;
 }
