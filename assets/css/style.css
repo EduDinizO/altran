@@ -2771,6 +2771,23 @@ body {
       .btn--yellow:hover::before {
         width: 100%; }
 
+.card {
+  width: 18.3rem;
+  background-color: #007EAf;
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: all .2s; }
+  .card:hover {
+    transform: scale(1);
+    box-shadow: 0 0 0.5rem 0 #AFAFAF;
+    transition: all .2s; }
+  .card__img {
+    width: 100%;
+    height: auto; }
+  .card__text {
+    text-align: center;
+    background-color: #FFF; }
+
 .logo {
   width: 15.5rem;
   height: auto; }
@@ -2969,3 +2986,6 @@ body {
     height: 2rem;
     fill: #888888;
     transition: all .2s; }
+
+.section-cards {
+  background-color: #e5f8fd; }

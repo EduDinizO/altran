@@ -1,0 +1,23 @@
+.card {
+    width: 18.3rem;
+    background-color: $color-blue;
+    transform: scale(0.9);
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: $box-shadow;
+        @include transition;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        text-align: center;
+        background-color: $color-white;
+    }
+}
