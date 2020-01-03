@@ -1,0 +1,42 @@
+.banner {
+    padding: 6rem 0 6rem 3rem;
+
+    @include respond(md) {
+        padding: 10rem 0 10rem 4rem;
+    }
+    @include respond(sm) {
+        padding: 10rem 0 10rem 4rem;
+    }
+    @include respond(xs) {
+        padding: 10rem 0 10rem 4rem;
+    }
+
+    &__text {
+        border-bottom: dotted 1px $color-white;
+    }
+
+    &__points {
+        background: url('../img/banner/points.png') 0 0 repeat-x;
+        height: 8.2rem;
+        left: 2px;
+        right: 2px;
+
+        &--top {
+            top: 2px;
+        }
+
+        &--bottom {
+            bottom: 2px;
+            transform: rotate(180deg);
+            z-index: -1;
+        }
+    }
+
+    &__img {
+        left: 0;
+        right: 0;
+        top: 0;
+        filter: brightness(0.7);
+        z-index: -1;
+    }
+}

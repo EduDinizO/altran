@@ -1,3 +1,43 @@
 .btn {
+    border: unset;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: all .3s;
+    cursor: pointer;
 
+    &--xl {
+        padding: 1.5rem 0 1.2rem 0;
+        font-size: 1.6rem;
+        width: 16.6rem;
+        @media only screen and (max-width: 991px) {
+            padding: 0.8rem 0 0.5rem 0;
+            font-size: 1.2rem;
+            width: 10.5rem;
+        }
+    }
+
+    &--yellow {
+        color: $color-black;
+        background: $color-yellow;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: $color-black;
+            border-radius: 0.5rem;
+            transition: all .35s;
+        }
+
+        &:hover {
+            color: $color-white;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
 }

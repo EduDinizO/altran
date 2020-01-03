@@ -41,31 +41,76 @@ body {
     &--xs {
         font-size: 0.5rem;
     }
+
     &--sm {
         font-size: 0.65rem;
     }
+
     &--md {
         font-size: 0.8rem;
     }
+
     &--lg {
         font-size: 1.2rem;
     }
+
     &--xl {
         font-size: 1.5rem;
     }
+
     &--bold {
         font-family: $font-anb;
     }
+
     &--semi-bold {
         font-weight: 700;
     }
+
     &--uppercase {
         text-transform: uppercase;
     }
+
     &--white {
         color: $color-white;
     }
+
     &--blue {
         color: $color-blue;
+    }
+
+    &--black {
+        color: $color-black;
+    }
+}
+
+.heading {
+    &--one {
+        font-size: 4.3rem;
+        @media only screen and (max-width: 991px) {
+            font-size: 2rem;
+        }
+    }
+
+    &--two {
+        font-size: 3rem;
+    }
+
+    &--three {
+        font-size: 2.1rem;
+        @media only screen and (max-width: 991px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--four {
+        font-size: 1.8rem;
+    }
+
+    &--five {
+        font-size: 1.5rem;
+    }
+
+    &--six {
+        font-size: 1.1rem;
     }
 }
