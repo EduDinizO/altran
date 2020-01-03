@@ -2,8 +2,9 @@
     border: unset;
     text-align: center;
     border-radius: 0.5rem;
-    transition: all .3s;
+    transition: all .4s;
     cursor: pointer;
+    overflow: hidden;
 
     &--xl {
         padding: 1.5rem 0 1.2rem 0;
@@ -16,10 +17,19 @@
         }
     }
 
-    &--yellow {
-        color: $color-black;
-        background: $color-yellow;
+    &--lg {
+        padding: 1.4rem 0 1.2rem 0;
+        font-size: 1.2rem;
+        width: 18.5rem;
+        @media only screen and (max-width: 991px) {
+            padding: 1rem 0 0.6rem 0;
+            font-size: 1rem;
+            width: 15rem;
+        }
+    }
 
+    &--yellow,
+    &--transparent {
         &::before {
             position: absolute;
             content: '';
@@ -27,17 +37,41 @@
             left: 0;
             width: 0;
             height: 100%;
+            transition: all .4s;
+        }
+
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    &--yellow {
+        color: $color-black;
+        background: $color-yellow;
+
+        &::before {
             background: $color-black;
-            border-radius: 0.5rem;
-            transition: all .35s;
         }
 
         &:hover {
             color: $color-white;
+        }
+    }
 
-            &::before {
-                width: 100%;
-            }
+    &--transparent {
+        color: $color-white;
+        background: $color-transparent;
+        border: 2px solid $color-white;
+
+        &::before {
+            background: $color-white;
+        }
+
+        &:hover {
+            color: $color-black;
+            border: 2px solid $color-white;
         }
     }
 }

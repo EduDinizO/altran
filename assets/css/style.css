@@ -2698,6 +2698,9 @@ body {
 
 .heading--two {
   font-size: 3rem; }
+  @media only screen and (max-width: 991px) {
+    .heading--two {
+      font-size: 2rem; } }
 
 .heading--three {
   font-size: 2.1rem; }
@@ -2742,8 +2745,9 @@ body {
   border: unset;
   text-align: center;
   border-radius: 0.5rem;
-  transition: all .3s;
-  cursor: pointer; }
+  transition: all .4s;
+  cursor: pointer;
+  overflow: hidden; }
   .btn--xl {
     padding: 1.5rem 0 1.2rem 0;
     font-size: 1.6rem;
@@ -2753,23 +2757,41 @@ body {
         padding: 0.8rem 0 0.5rem 0;
         font-size: 1.2rem;
         width: 10.5rem; } }
+  .btn--lg {
+    padding: 1.4rem 0 1.2rem 0;
+    font-size: 1.2rem;
+    width: 18.5rem; }
+    @media only screen and (max-width: 991px) {
+      .btn--lg {
+        padding: 1rem 0 0.6rem 0;
+        font-size: 1rem;
+        width: 15rem; } }
+  .btn--yellow::before, .btn--transparent::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .4s; }
+  .btn--yellow:hover::before, .btn--transparent:hover::before {
+    width: 100%; }
   .btn--yellow {
     color: #333333;
     background: #FEED35; }
     .btn--yellow::before {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background: #333333;
-      border-radius: 0.5rem;
-      transition: all .35s; }
+      background: #333333; }
     .btn--yellow:hover {
       color: #FFF; }
-      .btn--yellow:hover::before {
-        width: 100%; }
+  .btn--transparent {
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #FFF; }
+    .btn--transparent::before {
+      background: #FFF; }
+    .btn--transparent:hover {
+      color: #333333;
+      border: 2px solid #FFF; }
 
 .card {
   width: 18.3rem;
