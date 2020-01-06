@@ -1,4 +1,18 @@
 window.onload = () => {
+// ========== SHOW HEADER STICKY ==========
+    $(window).on('scroll', () => {
+        if ($(window).scrollTop() > 300) {
+            $('.js--header--sticky').css({
+                transform: 'translateY(0)',
+                transition: 'all .5s'
+            });
+        } else {
+            $('.js--header--sticky').css({
+                transform: 'translateY(-8rem)',
+                transition: 'all .5s'
+            });
+        }
+    });
     // ========== SHOW MOBILE MENU AND ADD BACKGROUND OVERLAY ==========
     $('.js--header--mobile__menu-icon').click(() => {
         if ($('.js--header--mobile__menu-icon').hasClass('header--mobile__menu-icon--closed')) {

@@ -67,6 +67,22 @@
         }
     }
 
+    &--sticky {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: $color-white;
+        box-shadow: $box-shadow;
+        transform: translateY(-8rem);
+        z-index: 10;
+
+        &__logo {
+            width: 3rem;
+            height: auto;
+        }
+    }
+
     &--mobile {
         bottom: 0;
         top: 0;

@@ -2687,6 +2687,9 @@ body {
 .text--black {
   color: #333333; }
 
+.text--grey {
+  color: #888888; }
+
 .text--center {
   text-align: center; }
 
@@ -2941,6 +2944,19 @@ body {
     .header__menu-icon:hover {
       background-color: #00597c;
       transition: all .2s; }
+
+.header--sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  box-shadow: 0 0 0.5rem 0 #AFAFAF;
+  transform: translateY(-8rem);
+  z-index: 10; }
+  .header--sticky__logo {
+    width: 3rem;
+    height: auto; }
 
 .header--mobile {
   bottom: 0;
