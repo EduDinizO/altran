@@ -74,4 +74,8 @@
             border: 2px solid $color-white;
         }
     }
+
+    &--animated {
+        opacity: 0;
+    }
 }

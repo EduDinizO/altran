@@ -40,7 +40,7 @@ window.onload = () => {
             });
         }
     });
-    // ========== SHOW SECTION INFOS ==========
+    // ========== CARDS ANIMATION ==========
     const cards = document.getElementById('cards');
     const cardsLength = $('#cards').children().length;
     const animationDelay = 0.2;
@@ -56,6 +56,36 @@ window.onload = () => {
                 cards.children[i].style.marginTop = 0;
                 cards.children[i].style.transition = 'all .2s linear ' + animationDelay * (i - 0.5) + 's';
             }
+        }
+    });
+    // ========== SHOW SECTION BANNER ==========
+    $(window).on('scroll', () => {
+        if ($(window).scrollTop() > 1900) {
+            $('.js--section-banner').css({
+                opacity: 1,
+                transition: 'all 1s'
+            });
+            $('.js--heading--animated').css({
+                top: 0,
+                transition: 'all 0.2s linear 0.5s'
+            });
+            $('.js--text--animated').css({
+                top: 0,
+                transition: 'all 0.2s linear 0.8s'
+            });
+            $('.js--section-banner__btn').css({
+                opacity: 1,
+                transition: 'opacity 0.2s linear 1.1s'
+            });
+        }
+    });
+    // ========== SHOW SECTION TWITTER ==========
+    $(window).on('scroll', () => {
+        if ($(window).scrollTop() > 2200) {
+            $('.js--section-twitter').css({
+                opacity: 1,
+                transition: 'all 0.2s'
+            });
         }
     });
 };

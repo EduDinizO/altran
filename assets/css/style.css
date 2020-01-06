@@ -2690,6 +2690,12 @@ body {
 .text--center {
   text-align: center; }
 
+.text--animated {
+  right: 0;
+  left: 0;
+  top: 100%;
+  visibility: visible; }
+
 .heading--one {
   font-size: 4.3rem; }
   @media only screen and (max-width: 991px) {
@@ -2746,6 +2752,10 @@ body {
 .u--mb-45 {
   margin-bottom: 2rem; }
 
+.invisible {
+  visibility: hidden;
+  overflow: hidden; }
+
 .btn {
   border: unset;
   text-align: center;
@@ -2797,6 +2807,8 @@ body {
     .btn--transparent:hover {
       color: #333333;
       border: 2px solid #FFF; }
+  .btn--animated {
+    opacity: 0; }
 
 .card {
   width: 18.3rem;
@@ -3071,4 +3083,10 @@ body {
 .section-cards {
   margin-top: 5rem;
   background-color: #e5f8fd;
+  opacity: 0; }
+
+.section-banner {
+  opacity: 0; }
+
+.section-twitter {
   opacity: 0; }
