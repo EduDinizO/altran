@@ -12,6 +12,13 @@
 
     &__list {
         &-item {
+            @include transition;
+
+            &:hover {
+                color: $color-blue;
+                @include transition;
+            }
+
             &:not(:last-of-type) {
                 &:after {
                     content: '';
@@ -30,10 +37,17 @@
         height: 3rem;
         border-radius: 3rem;
         background-color: $color-blue;
+        transform: scale(0.9);
+        @include transition;
+
+        &:hover {
+            transform: scale(1);
+            @include transition;
+        }
 
         &-icon {
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 40%;
             fill: $color-white;
         }
     }

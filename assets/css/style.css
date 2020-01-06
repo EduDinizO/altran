@@ -2869,21 +2869,31 @@ body {
     height: auto; }
   .footer__title {
     padding-top: 0.3rem; }
-  .footer__list-item:not(:last-of-type):after {
-    content: '';
-    display: block;
-    height: 80%;
-    width: 1px;
-    margin: 0 0.5rem;
-    background-color: #333333; }
+  .footer__list-item {
+    transition: all .2s; }
+    .footer__list-item:hover {
+      color: #007EAf;
+      transition: all .2s; }
+    .footer__list-item:not(:last-of-type):after {
+      content: '';
+      display: block;
+      height: 80%;
+      width: 1px;
+      margin: 0 0.5rem;
+      background-color: #333333; }
   .footer__social {
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: #007EAf; }
+    background-color: #007EAf;
+    transform: scale(0.9);
+    transition: all .2s; }
+    .footer__social:hover {
+      transform: scale(1);
+      transition: all .2s; }
     .footer__social-icon {
-      width: 50%;
-      height: 50%;
+      width: 40%;
+      height: 40%;
       fill: #FFF; }
 
 .header__list-item {
