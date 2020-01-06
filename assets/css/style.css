@@ -2814,6 +2814,9 @@ body {
   .card__text {
     text-align: center;
     background-color: #FFF; }
+  .card--animated {
+    opacity: 0;
+    margin-top: 1rem; }
 
 .logo {
   width: 15.5rem;
@@ -3061,5 +3064,11 @@ body {
     fill: #888888;
     transition: all .2s; }
 
+.section-infos {
+  opacity: 0;
+  transition: all .4s; }
+
 .section-cards {
-  background-color: #e5f8fd; }
+  margin-top: 5rem;
+  background-color: #e5f8fd;
+  opacity: 0; }

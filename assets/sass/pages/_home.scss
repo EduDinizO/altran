@@ -52,7 +52,13 @@
 }
 
 .section {
+    &-infos {
+        opacity: 0;
+        transition: all .4s;
+    }
     &-cards {
+        margin-top: 5rem;
         background-color: $color-blue-light;
+        opacity: 0;
     }
 }
