@@ -1,3 +1,40 @@
 .footer {
+    background-color: $color-grey-light;
 
+    &__logo {
+        width: 7rem;
+        height: auto;
+    }
+
+    &__title {
+        padding-top: 0.3rem;
+    }
+
+    &__list {
+        &-item {
+            &:not(:last-of-type) {
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 80%;
+                    width: 1px;
+                    margin: 0 0.5rem;
+                    background-color: $color-black;
+                }
+            }
+        }
+    }
+
+    &__social {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+        background-color: $color-blue;
+
+        &-icon {
+            width: 50%;
+            height: 50%;
+            fill: $color-white;
+        }
+    }
 }
