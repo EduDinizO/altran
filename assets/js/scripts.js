@@ -23,8 +23,10 @@ window.onload = () => {
                 left: 0,
                 right: 0,
                 backgroundColor: 'rgba(0,0,0,0.3)',
-                transition: 'all .4s'
-            })
+                transition: 'all .4s',
+                zIndex: 1
+            });
+            $('.js--header--mobile').addClass('header--mobile--opened');
         } else {
             $('.js--header--mobile__menu-icon').removeClass('header--mobile__menu-icon--opened').addClass('header--mobile__menu-icon--closed');
             $('.js--header--mobile__menu').css({
@@ -35,7 +37,8 @@ window.onload = () => {
                 bottom: 'unset',
                 left: 'unset',
                 transition: 'all .4s'
-            })
+            });
+            $('.js--header--mobile').removeClass('header--mobile--opened');
         }
     });
 };
